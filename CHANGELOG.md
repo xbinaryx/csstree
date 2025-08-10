@@ -1,5 +1,53 @@
 # Changelog
 
+## [3.7.0](https://github.com/xbinaryx/csstree/compare/css-tree-v3.6.3...css-tree-v3.7.0) (2025-08-10)
+
+
+### Features
+
+* Add support for math functions ([#53](https://github.com/xbinaryx/csstree/issues/53)) ([b7c4915](https://github.com/xbinaryx/csstree/commit/b7c491587de974630bcde75034e3cb55a2edbeca))
+* Add support for most CSS nesting rules ([#37](https://github.com/xbinaryx/csstree/issues/37)) ([9d6b65f](https://github.com/xbinaryx/csstree/commit/9d6b65fd1d6d975f188de27d41df83a82c4d7cc2))
+* add support for typed custom properties ([0e9d141](https://github.com/xbinaryx/csstree/commit/0e9d14129a108f79bc4c772ee0cc4f1812070215))
+* Add support for typed custom properties ([#11](https://github.com/xbinaryx/csstree/issues/11)) ([0e9d141](https://github.com/xbinaryx/csstree/commit/0e9d14129a108f79bc4c772ee0cc4f1812070215))
+* Add type definitions ([#4](https://github.com/xbinaryx/csstree/issues/4)) ([e407bae](https://github.com/xbinaryx/csstree/commit/e407bae294cdec1f987fac94b75b7ca7f749c229))
+* Customize tokenize function via the fork API ([#36](https://github.com/xbinaryx/csstree/issues/36)) ([e62301c](https://github.com/xbinaryx/csstree/commit/e62301cdb67dc7813870712e7302c5d1e00af968))
+* Nested selector support ([9d6b65f](https://github.com/xbinaryx/csstree/commit/9d6b65fd1d6d975f188de27d41df83a82c4d7cc2))
+* Parse nested element selector ([#51](https://github.com/xbinaryx/csstree/issues/51)) ([ed3ae55](https://github.com/xbinaryx/csstree/commit/ed3ae5503e0d92facaf8d0a81d60b2e35af6c891))
+* passthrough env in lexer syntax matching ([c0e22c0](https://github.com/xbinaryx/csstree/commit/c0e22c0e7c042a60764a51a519b53f18a8ceae62))
+* passthrough env() in lexer syntax matching ([#12](https://github.com/xbinaryx/csstree/issues/12)) ([c0e22c0](https://github.com/xbinaryx/csstree/commit/c0e22c0e7c042a60764a51a519b53f18a8ceae62))
+* Rename to @eslint/css-tree ([#1](https://github.com/xbinaryx/csstree/issues/1)) ([6f20a43](https://github.com/xbinaryx/csstree/commit/6f20a4328e323cc0d40dd9407908171a54fac0c0))
+
+
+### Bug Fixes
+
+* Add missing &lt;parenthesis-block&gt; type ([#42](https://github.com/xbinaryx/csstree/issues/42)) ([1695a47](https://github.com/xbinaryx/csstree/commit/1695a4743bd452438612ab04d7738dc703eb1263))
+* Add missing node types and update other types ([#18](https://github.com/xbinaryx/csstree/issues/18)) ([37a6dd4](https://github.com/xbinaryx/csstree/commit/37a6dd47ca30b626852f6cb61b5f7a4744da2e71))
+* Add parse.SyntaxError and parse.config types ([#14](https://github.com/xbinaryx/csstree/issues/14)) ([d201786](https://github.com/xbinaryx/csstree/commit/d20178613d5b4d6bf6dce36f94cbb04b0eddfe59))
+* Add patch for &lt;cubic-bezier-easing-function&gt; ([#28](https://github.com/xbinaryx/csstree/issues/28)) ([c4d6c44](https://github.com/xbinaryx/csstree/commit/c4d6c44931114edfbbacf1de8b26288d15cf9e48)), closes [#27](https://github.com/xbinaryx/csstree/issues/27)
+* Add types for onToken callback ([#9](https://github.com/xbinaryx/csstree/issues/9)) ([b403ffb](https://github.com/xbinaryx/csstree/commit/b403ffb6085d5e8c481f62026d88eebd632a3cb5))
+* expand nested CSS combinator selectors support in block parsing ([#64](https://github.com/xbinaryx/csstree/issues/64)) ([94249a2](https://github.com/xbinaryx/csstree/commit/94249a24949cd0755ba7e415f6d655ddbeea2bac))
+* isDelim() type ([#55](https://github.com/xbinaryx/csstree/issues/55)) ([9605092](https://github.com/xbinaryx/csstree/commit/9605092a76cd7620ad49f1747d6086dd9021fd5a))
+* ParserContext to have all methods ([e069f6f](https://github.com/xbinaryx/csstree/commit/e069f6f50e64bb1728208e845498561fa5afe287))
+* ParserContext type to have all methods ([#57](https://github.com/xbinaryx/csstree/issues/57)) ([e069f6f](https://github.com/xbinaryx/csstree/commit/e069f6f50e64bb1728208e845498561fa5afe287))
+* Remove `src` descriptor patch ([#23](https://github.com/xbinaryx/csstree/issues/23)) ([e3d17f0](https://github.com/xbinaryx/csstree/commit/e3d17f0fc4e1c29df8d80985fbc8a7f9d8c78e2b))
+* Remove `unicode-range` descriptor patch ([#25](https://github.com/xbinaryx/csstree/issues/25)) ([2048240](https://github.com/xbinaryx/csstree/commit/2048240bd3811a7fb4f7bbbc18c73e7064196e4e))
+* Remove outdated `@font-face/unicode-range` descriptor patch ([#26](https://github.com/xbinaryx/csstree/issues/26)) ([1ea54f7](https://github.com/xbinaryx/csstree/commit/1ea54f7f6c1477c5a9cbae3a233061c85e336f8f))
+* Remove outdated `anchor()` & `anchor-size()` descriptor patch ([afd673a](https://github.com/xbinaryx/csstree/commit/afd673ad211653084b3d44935c42b972b911de12))
+* Remove outdated `anchor()` & `anchor-size()` function patch ([#29](https://github.com/xbinaryx/csstree/issues/29)) ([afd673a](https://github.com/xbinaryx/csstree/commit/afd673ad211653084b3d44935c42b972b911de12))
+* Remove wrong `scroll-timeline` property patch ([#22](https://github.com/xbinaryx/csstree/issues/22)) ([b142b20](https://github.com/xbinaryx/csstree/commit/b142b205c0d2d73c5ef27799a35ade92dc271ef7))
+* Remove wrong scroll-timeline property patch ([b142b20](https://github.com/xbinaryx/csstree/commit/b142b205c0d2d73c5ef27799a35ade92dc271ef7))
+* Revert "Remove outdated `@font-face/unicode-range`" ([#61](https://github.com/xbinaryx/csstree/issues/61)) ([4aad29d](https://github.com/xbinaryx/csstree/commit/4aad29d7fd29f15e5ff981667b14cab054003060))
+* SyntaxParseError type ([#15](https://github.com/xbinaryx/csstree/issues/15)) ([d95706e](https://github.com/xbinaryx/csstree/commit/d95706e95b2ef8cbfd27211a753adf73381c643f))
+* Types for atrule parsing ([#49](https://github.com/xbinaryx/csstree/issues/49)) ([7194e95](https://github.com/xbinaryx/csstree/commit/7194e958521ffb43cd25ba82645a9ba0f3ec875b))
+* Types for custom nodes and scopes ([#47](https://github.com/xbinaryx/csstree/issues/47)) ([3a663e1](https://github.com/xbinaryx/csstree/commit/3a663e1e94a65b1bc2da4b2cdb052700988efcc4))
+* Types for default-syntax-data and nodes ([#44](https://github.com/xbinaryx/csstree/issues/44)) ([2edbf80](https://github.com/xbinaryx/csstree/commit/2edbf80347b08999197e2dc696aebf1bdcf61b8c))
+* Types for Node definitions ([#34](https://github.com/xbinaryx/csstree/issues/34)) ([e553a25](https://github.com/xbinaryx/csstree/commit/e553a25b9ea0562ef75b46583e9375ef307a8318))
+* Types for node generate() function ([#56](https://github.com/xbinaryx/csstree/issues/56)) ([846120b](https://github.com/xbinaryx/csstree/commit/846120b5a0e64b6e7b8105ddef904a07b93e5c8b))
+* Types for NodeSyntaxConfig ([#41](https://github.com/xbinaryx/csstree/issues/41)) ([d7dc09d](https://github.com/xbinaryx/csstree/commit/d7dc09d3d2fda0e34e3573a2c009ee48da8c89ec))
+* Update CSS syntax ([#8](https://github.com/xbinaryx/csstree/issues/8)) ([ff07c1e](https://github.com/xbinaryx/csstree/commit/ff07c1e8ce1989f1c94cbb9ae44e3c8feee1de9e))
+* Update MDN data and patch ([#54](https://github.com/xbinaryx/csstree/issues/54)) ([8a707a7](https://github.com/xbinaryx/csstree/commit/8a707a7519ea50f64a68cd77bff1dac678e59326))
+* Update mdn-data and patch ([#32](https://github.com/xbinaryx/csstree/issues/32)) ([20b412f](https://github.com/xbinaryx/csstree/commit/20b412f1692bd98dcadd732d62c4799882bced73))
+
 ## [3.6.3](https://github.com/eslint/csstree/compare/css-tree-v3.6.2...css-tree-v3.6.3) (2025-07-29)
 
 
